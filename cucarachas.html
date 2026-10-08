@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cucarachas - Grupo motero independiente de Sevilla">
+  <title>Cucarachas — Grupo Motero</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #000;
+      --text: #f4f4f4;
+      --muted: #c7c7c7;
+      --line: #292929;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 34px 22px 44px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6px 0 28px;
+    }
+
+    .hero img {
+      display: block;
+      width: min(100%, 640px);
+      height: auto;
+      margin: 0 auto 26px;
+      border-radius: 2px;
+    }
+
+    .intro {
+      margin: 0 auto;
+      max-width: 650px;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 430px);
+      height: auto;
+      margin: 0 auto 28px;
+    }
+
+    .photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 30px;
+      border-radius: 2px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin: 0 0 20px;
+      line-height: 1.2;
+      letter-spacing: .02em;
+    }
+
+    h1 {
+      font-size: clamp(27px, 5vw, 42px);
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: clamp(21px, 4vw, 30px);
+    }
+
+    p { margin: 0 0 18px; }
+
+    .events {
+      margin: 20px 0 22px;
+      padding-left: 24px;
+    }
+
+    .events li { margin: 9px 0; }
+
+    .people {
+      display: grid;
+      gap: 7px;
+      text-align: center;
+      margin-top: 24px;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .socials a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid #555;
+      padding: 8px 16px;
+      border-radius: 999px;
+      transition: background .2s ease, color .2s ease, border-color .2s ease;
+    }
+
+    .socials a:hover,
+    .socials a:focus-visible {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text);
+    }
+
+    .credit {
+      margin-top: 22px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .credit a { color: #aaa; }
+
+    @media (max-width: 520px) {
+      .page { padding: 22px 17px 34px; }
+      .hero { padding-bottom: 20px; }
+      section { padding: 28px 0; }
+      .intro, p { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <img src="https://cucarachas.carrd.co/assets/images/image03.jpg?v=fe3bae07"
+           alt="Cucarachas">
+      <p class="intro">
+        Cucarachas es un grupo motero independiente fundado en 2016 con sede y actividad
+        en Sevilla y sus alrededores. Nuestra razón de ser es la carretera: la ruta de
+        fin de semana, el viaje en grupo y el respeto a la cultura motera tradicional.
+      </p>
+    </header>
+
+    <section>
+      <img class="logo"
+           src="https://cucarachas.carrd.co/assets/images/image01.png?v=fe3bae07"
+           alt="Logo oficial Grupo Motero Cucarachas Sevilla">
+
+      <h2>Actividad y Citas Imprescindibles</h2>
+      <p>
+        Mantenemos un calendario activo de rutas y viajes a lo largo de todo el año,
+        destacando la asistencia anual a dos encuentros fundamentales que forman parte
+        de la identidad de nuestro colectivo:
+      </p>
+
+      <ul class="events">
+        <li>Concentración Internacional de Motos de Faro (Portugal)</li>
+        <li>Concentración Motera Las ZÁGUILAS (El Saucejo, Sevilla)</li>
+      </ul>
+
+      <p>
+        Dos citas con motoclubes cuya entrega, trabajo y hospitalidad representan los
+        valores que compartimos y admiramos del mundo de las dos ruedas.
+      </p>
+    </section>
+
+    <section>
+      <img class="photo"
+           src="https://cucarachas.carrd.co/assets/images/image02.jpg?v=fe3bae07"
+           alt="Miembros del grupo Cucarachas">
+
+      <h2>Nosotros</h2>
+      <p>
+        En 2026 cumplimos nuestro X Aniversario (2016-2026), manteniendo la esencia
+        cercana con la que nacimos.
+      </p>
+
+      <div class="people" aria-label="Miembros">
+        <span>Jessica</span>
+        <span>Bas</span>
+        <span>Miguel Ángel</span>
+        <span>Carlos</span>
+      </div>
+    </section>
+
+    <footer>
+      <nav class="socials" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/profile.php?id=61593978227133&sk=about" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/cucarachas2016/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+      <div class="credit">
+        Inspirada en la página original de Cucarachas en Carrd.
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
