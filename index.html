@@ -13,9 +13,10 @@
   <style>
     :root {
       color-scheme: dark;
-      --bg: #121212;
-      --text: #ffffff;
-      --line: rgba(255, 255, 255, 0.2);
+      --bg: #000;
+      --text: #f4f4f4;
+      --muted: #c7c7c7;
+      --line: #292929;
     }
 
     * { box-sizing: border-box; }
@@ -26,15 +27,9 @@
       font-family: 'Metal Mania', cursive, sans-serif !important;
       letter-spacing: 1px;
       margin: 0;
-      background-color: var(--bg);
-      background-image: url('fondo.jpg');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
+      background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
-      font-size: 19px;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -42,8 +37,6 @@
       width: min(100%, 760px);
       margin: 0 auto;
       padding: 34px 22px 44px;
-      background-color: rgba(0, 0, 0, 0.7);
-      min-height: 100vh;
     }
 
     .hero {
@@ -62,6 +55,7 @@
     .intro {
       margin: 0 auto;
       max-width: 650px;
+      font-size: 18px;
     }
 
     section {
@@ -86,7 +80,6 @@
 
     h1, h2, h3, p, li, span, a, div {
       font-family: 'Metal Mania', cursive, sans-serif !important;
-      text-shadow: 2px 2px 4px #000000;
     }
 
     h1, h2 {
@@ -102,7 +95,7 @@
     }
 
     h2 {
-      font-size: clamp(23px, 4vw, 32px);
+      font-size: clamp(21px, 4vw, 30px);
     }
 
     p { margin: 0 0 18px; }
@@ -119,6 +112,7 @@
       gap: 7px;
       text-align: center;
       margin-top: 24px;
+      font-weight: 600;
       letter-spacing: .03em;
     }
 
@@ -138,24 +132,23 @@
     .socials a {
       color: var(--text);
       text-decoration: none;
-      border: 1px solid #777;
+      border: 1px solid #555;
       padding: 8px 16px;
       border-radius: 999px;
-      background: rgba(0, 0, 0, 0.5);
       transition: background .2s ease, color .2s ease, border-color .2s ease;
     }
 
     .socials a:hover,
     .socials a:focus-visible {
       background: var(--text);
-      color: #000;
+      color: var(--bg);
       border-color: var(--text);
     }
 
     .credit {
       margin-top: 22px;
-      font-size: 13px;
-      color: #aaa;
+      font-size: 12px;
+      color: #777;
     }
 
     .credit a { color: #aaa; }
@@ -164,10 +157,11 @@
       .page { padding: 22px 17px 34px; }
       .hero { padding-bottom: 20px; }
       section { padding: 28px 0; }
+      .intro, p { font-size: 16px; }
     }
   </style>
 </head>
-<body>
+<body style="background-image: url('fondo.jpg'); background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat;">
   <main class="page">
     <header class="hero">
       <img src="https://cucarachas.carrd.co/assets/images/image03.jpg?v=fe3bae07" alt="Cucarachas">
